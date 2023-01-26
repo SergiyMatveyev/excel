@@ -1,0 +1,59 @@
+{
+  "name": "excel",
+  "version": "1.0.0",
+  "description": "Pure JavaScript excel application",
+  "main": "webpack.config.js",
+  "private": true,
+  "browserslist": "> 0.25%, not dead",
+  "scripts": {
+    "test": "jest --env=jsdom",
+    "test:watch": "jest --env=jsdom --watch",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "lint": "npx eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergiyMatveyev/excel.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel",
+    "html",
+    "css",
+    "scss"
+  ],
+  "author": "Sergiy Matveyev <sergiymtvwork@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergiyMatveyev/excel/issues"
+  },
+  "homepage": "https://github.com/SergiyMatveyev/excel#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^9.1.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.27.0",
+    "eslint-config-google": "^0.14.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.56.0",
+    "sass-loader": "^13.1.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "normalize.css": "^8.0.1"
+  }
+}
